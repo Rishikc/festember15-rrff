@@ -1,5 +1,5 @@
 function sendReg() {
-	console.log(document.getElementById('email').value);
+if (document.getElementById('email').value != ""){	
 	$.ajax({
 		type: "POST",
 		//dataType: "jsonp",
@@ -14,4 +14,5 @@ function sendReg() {
 		    console.log(data);
 		}
 	});
+}
 }
