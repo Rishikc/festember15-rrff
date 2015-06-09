@@ -27,6 +27,7 @@
 							<li><a href="#venue">Venue</a></li>
 							<li><a href="#rules">Rules</a></li>
 							<li><a href="#judges">Judges</a></li>
+							<li><a href="#contacts">Contacts</a></li>
 							<li><a href="#register" class="button special">Register</a></li>
 						</ul>
 					</nav>
@@ -175,16 +176,44 @@
 					<div class="container">
 						<header>
 							<a id="register"></a>
-							<h2>Register here</h2>
-							<p>I bet you're excited... blah blah</p>
+							<h2>Registration</h2>
+							<p>Online registrations start from July 15. Drop your email here to get notified.</p>
 <!-- 							<a href="#" class="button special">Register</a>
  -->							
 						</header>
-						<form method="" action="" class="container 50%">
+						<form method="" action="POST" class="container 50%">
 							<div class="row uniform 50%">
 								<div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
-								<div class="4u$ 12u$(xsmall)"><input type="submit" onclick="return false;" value="Get Started" class="fit special" /></div>
+								<div class="4u$ 12u$(xsmall)"><input type="submit" onclick="sendReg();return false;" value="Get Started" class="fit special" /></div>
 							</div>
+						</form>
+					</div>
+				</section>
+
+				<section id="five" class="wrapper style4 special fade">
+					<div class="container">
+						<header>
+							<a id="contacts"></a>
+							<h2>Contacts</h2>
+							<p></p>
+						</header>
+						<p>
+							For more details, contact:
+							<table>
+								<td>
+									Mallikarjun
+									+91 9095282580
+								</td>
+								<td>
+									Dhruv
+									+91 9920440911
+								</td>
+								<td>
+									Kaushal
+									+91 9952204638 
+								</td>
+							</table>
+						</p>
 						</form>
 					</div>
 				</section>
@@ -207,6 +236,7 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/reg.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
