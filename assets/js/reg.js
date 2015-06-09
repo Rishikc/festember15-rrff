@@ -4,13 +4,13 @@ function sendReg() {
 		type: "POST",
 		dataType: "jsonp",
 		data: {'email': document.getElementById('email').value },
-		url: "http://festember.com/reg/reg.php",
+		url: "https://festember.com/reels/reg.php",
 		success: function(data) {
 			alert("Success");
 		},
 		error: function(data){
-			alert();
-			console.log("failed to call /snr/getHubsInCity api");
+		    alert(data);
+		    console.log(data);
 		}
 	});
 }
