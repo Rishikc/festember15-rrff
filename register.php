@@ -5,7 +5,7 @@
   $pass="";
   $db="delta";
   $path=getcwd();
- 
+  //  echo $path.$acc_no;
   $dbc = mysqli_connect($host,$user,$pass,$db)
   or die('error connecting to mysql server');
 
@@ -17,8 +17,6 @@
   $acc_name=mysqli_escape_string($dbc,$_POST['acc_name']);
   $bank=mysqli_escape_string($dbc,$_POST['bank']);
   
-    
-
 
 $query1="INSERT INTO register(name,mobile,email,coll,acc_no,acc_name,bank) values('$name','$mobile','$email','$coll','$acc_no','$acc_name','$bank')";
 $result=mysqli_query($dbc,$query1)
@@ -26,11 +24,10 @@ or die('error querying 2');
 mysqli_close($dbc);
 
       
-      move_uploaded_file($_FILES["receipt"]["tmp_name"],
-         $path .$acc_no )         //acc_no is unique
+move_uploaded_file($_FILES["receipt"]["tmp_name"],$path.'/uploads/'.$acc_no )         //acc_no is unique
         or die('Error uploading');
     
 echo 'you have successfully <br>signed up :)';
 
-	
+  
 ?>
