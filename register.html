@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Register</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<style type="text/css">
+	label {
+float: left;
+width: 10em;
+margin-right: 1em;
+}
+	</style>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Rolling Reels</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Register</h2>
+						</header>
+
+						<!-- Content -->
+							<section id="content">
+								<form method="post" action="register.php" enctype="multipart/form-data">
+									
+									<div>
+  									<p><label for="name">Name:</label>
+  									<input id="name" name="name" type="text" required/>
+									</p>
+									</div>
+									<Br>
+									
+									<div>
+  									<p><label for="mobile">Phone Number:</label>
+  									<input id="mobile" name="mobile" type="number" required/>
+									</p>
+									</div>
+									<br>
+									
+									<div>
+  									<label for="email1">Email id:</label>
+  									<input id="email1" name="email1" type="email" required/>
+									</div>
+									<br>
+									
+									<div>
+  									<label for="email2">Confirm Email id:</label>
+  									<input id="email2" name="email2" type="email" onblur="emailmatch()" required/>
+									</div>
+									
+									<br>
+									<div id="confirmemail">
+									</div>
+									
+									<br>
+									<div>
+  									<label for="coll">College Name:</label>
+  									<input id="coll" name="coll" type="text" required/>
+									</div>
+
+									<br>
+									<div>
+  									<label for="acc_no">Account Number:</label>
+  									<input id="acc_no" name="acc_no" type="number" required/>
+									</div>
+
+									<br>
+									<div>
+  									<label for="acc_name">Account Name</label>
+  									<input id="acc_name" name="acc_name" type="text" required/>
+									</div>
+
+									<br>
+									<div>
+  									<label for="bank">Bank &amp; Branch:</label>
+  									<input id="bank" name="bank" type="text" required/>
+									</div>
+									
+									<br>
+									<div>
+  									<label for="receipt">Receipt:</label>
+  									<input type="file" name="receipt" id="receipt" required/>
+									</div>
+
+									<Br>
+									<input type="submit" >
+									<div id="form-button"></div>
+								</form>
+							</section>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://facebook.com/festember" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="https://instagram.com/festember" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://twitter.com/festember" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.youtube.com/channel/UCHQB_7nQA9A4X4kq12iyVww" class="icon alt fa-youtube"><span class="label">Email</span></a></li>
+					<li><a href="https://festember.com/blog" class="icon alt fa-book"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Festember. All rights reserved.</li><li>Powered by <a href="http://delta.nitt.edu">Delta Force</a></li>
+				</ul>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/reg.js"></script>
+
+	</body>
+</html>
