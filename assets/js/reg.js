@@ -11,7 +11,7 @@ if (document.getElementById('email1').value != "" && document.getElementById('em
            var bank= $('textarea[name=bank]').val();
            var receipt= $('input[name=receipt]')[0].files[0];
 
-           var dataString = 'name='+ name + '&email1='+ email + '&mobile='+ mobile + '&coll='+ coll + '&acc_no'+ acc_no + '&acc_name=' + acc_name+ '&bank=' + bank + '&receipt=' + receipt;
+           var dataString = 'name='+ name + '&email1='+ email1 + '&mobile='+ mobile + '&coll='+ coll + '&acc_no'+ acc_no + '&acc_name=' + acc_name+ '&bank=' + bank + '&receipt=' + receipt;
 	                  
 	alert('hello');
 	$.ajax({
